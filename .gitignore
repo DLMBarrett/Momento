@@ -1,7 +1,7 @@
 .idea
-Library
-Temp
-Logs
-.sln
-.csproj
-obj
+[Ll]ibrary/
+[Tt]emp/
+[Ll]ogs/
+*.sln
+*.csproj
+[Oo]bj/
