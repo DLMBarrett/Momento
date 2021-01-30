@@ -481,7 +481,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1072831191
   m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 0176d634e5f673f41b8168c5a75df980, type: 3}
   m_Color: {r: 0.18974723, g: 0.534523, b: 0.9811321, a: 1}
   m_FlipX: 0
@@ -546,7 +546,7 @@ MonoBehaviour:
   rotateOverTime: 1
   rotationSpeed: 4
   hasMaxDistance: 0
-  maxDistnace: 20
+  maxDistnace: 10
   launchToPoint: 0
   launchType: 1
   launchSpeed: 1
@@ -691,7 +691,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1072831191
   m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 0176d634e5f673f41b8168c5a75df980, type: 3}
   m_Color: {r: 0.18974723, g: 0.534523, b: 0.9811321, a: 1}
   m_FlipX: 0
@@ -756,7 +756,7 @@ MonoBehaviour:
   rotateOverTime: 1
   rotationSpeed: 4
   hasMaxDistance: 0
-  maxDistnace: 20
+  maxDistnace: 10
   launchToPoint: 0
   launchType: 1
   launchSpeed: 1
