@@ -1,3 +1,7 @@
 .idea
 Library
 Temp
+Logs
+.sln
+.csproj
+obj
