@@ -1,7 +1,8 @@
 .idea
+.vs
 [Ll]ibrary/
 [Tt]emp/
 [Ll]ogs/
+[Oo]bj/
 *.sln
 *.csproj
-[Oo]bj/
