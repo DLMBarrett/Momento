@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\GrapplePoint.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\ParallaxObject.cs" />
+     <Compile Include="Assets\Scripts\Rotate.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
