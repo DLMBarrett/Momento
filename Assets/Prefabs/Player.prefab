@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1878177888009609614}
   - component: {fileID: 1878177888009609615}
   m_Layer: 2
-  m_Name: Rope
+  m_Name: Right Rope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -243,7 +243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1878177888593186439}
   m_Layer: 2
-  m_Name: FirePoint
+  m_Name: Right Fire Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -296,6 +296,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1878177889498593107}
+  - {fileID: 7021500160987091488}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -421,7 +422,7 @@ GameObject:
   - component: {fileID: 1878177889081855884}
   - component: {fileID: 1878177889081855874}
   m_Layer: 2
-  m_Name: GrapplingGun
+  m_Name: Right Grappling Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -565,7 +566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1878177889498593107}
   m_Layer: 2
-  m_Name: GunPivot
+  m_Name: Right Gun Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -583,7 +584,6 @@ Transform:
   m_LocalScale: {x: 0.30929, y: 0.13309136, z: 0.30929}
   m_Children:
   - {fileID: 1878177889081855887}
-  - {fileID: 4271884685494488200}
   m_Father: {fileID: 1878177888774571956}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -597,7 +597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1713613627148135643}
   m_Layer: 2
-  m_Name: FirePoint
+  m_Name: Left Fire Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -618,6 +618,37 @@ Transform:
   m_Father: {fileID: 4271884685494488200}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6050784054363273396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7021500160987091488}
+  m_Layer: 2
+  m_Name: Left Gun Pivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7021500160987091488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6050784054363273396}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.44, y: 0, z: 0}
+  m_LocalScale: {x: 0.30929, y: 0.13309136, z: 0.30929}
+  m_Children:
+  - {fileID: 4271884685494488200}
+  m_Father: {fileID: 1878177888774571956}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6927181249741679019
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,7 +662,7 @@ GameObject:
   - component: {fileID: 2426695052220281403}
   - component: {fileID: 8911612560640598610}
   m_Layer: 2
-  m_Name: GrapplingGun (1)
+  m_Name: Left Grappling Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -644,13 +675,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6927181249741679019}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1713613627148135643}
-  m_Father: {fileID: 1878177889498593107}
-  m_RootOrder: 1
+  m_Father: {fileID: 7021500160987091488}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &167063393161409173
 SpriteRenderer:
@@ -777,7 +808,7 @@ GameObject:
   - component: {fileID: 8146178893475417681}
   - component: {fileID: 449146935407567479}
   m_Layer: 2
-  m_Name: Rope
+  m_Name: Left Rope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
