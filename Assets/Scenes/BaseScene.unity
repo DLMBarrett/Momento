@@ -351,6 +351,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72d26a5ecd4b6469bb1cd51ff8d357c3, type: 3}
+--- !u!1 &500113625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1878177888774571955, guid: ed0aa080e0020e94e9cbfc600dd9f217,
+    type: 3}
+  m_PrefabInstance: {fileID: 1878177887986159562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &500113626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500113625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea1d0bd19be6b4601a955128b05c3525, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,6 +1152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1763304204}
   - component: {fileID: 1763304203}
+  - component: {fileID: 1763304205}
   - component: {fileID: 1763304202}
   m_Layer: 0
   m_Name: Circle
@@ -1154,6 +1173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 116b56d8e33b4cf44a8cc3ea29cf56e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyNumber: 1
 --- !u!212 &1763304203
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1220,6 +1240,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1763304205
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763304201}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &1993034906
 GameObject:
   m_ObjectHideFlags: 0
