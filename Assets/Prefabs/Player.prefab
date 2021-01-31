@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grappleRope: {fileID: 1878177888009609615}
-  otherGrapplingGun: {fileID: 0}
+  otherGrapplingGun: {fileID: 7120145142843026853}
   mouseButton: 324
   grappleToAll: 1
   IgnoreMe:
@@ -687,7 +687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grappleRope: {fileID: 449146935407567479}
-  otherGrapplingGun: {fileID: 0}
+  otherGrapplingGun: {fileID: 4759198195502073682}
   mouseButton: 323
   grappleToAll: 1
   IgnoreMe:
