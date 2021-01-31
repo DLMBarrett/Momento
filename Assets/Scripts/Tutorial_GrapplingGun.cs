@@ -4,6 +4,7 @@ public class Tutorial_GrapplingGun : MonoBehaviour
 {
     [Header("Scripts Ref:")]
     public Tutorial_GrapplingRope grappleRope;
+    public Tutorial_GrapplingGun otherGrapplingGun;
 
     [Header("Controls:")]
     public KeyCode mouseButton;
@@ -51,6 +52,7 @@ public class Tutorial_GrapplingGun : MonoBehaviour
 
     [HideInInspector] public Vector2 grapplePoint;
     [HideInInspector] public Vector2 grappleDistanceVector;
+    [HideInInspector] public bool hitObject = false;
 
     private void Start()
     {
@@ -90,8 +92,11 @@ public class Tutorial_GrapplingGun : MonoBehaviour
         else if (Input.GetKeyUp(mouseButton))
         {
             grappleRope.enabled = false;
-            m_springJoint2D.enabled = false;
-            m_rigidbody.gravityScale = 1;
+            if (!otherGrapplingGun.grappleRope.enabled)
+            {
+                m_springJoint2D.enabled = false;
+                m_rigidbody.gravityScale = 1;
+            }
         }
         else
         {
@@ -118,7 +123,7 @@ public class Tutorial_GrapplingGun : MonoBehaviour
     void SetGrapplePoint()
     {
         Vector2 distanceVector = m_camera.ScreenToWorldPoint(Input.mousePosition) - gunPivot.position;
-        if (Physics2D.Raycast(firePoint.position, distanceVector.normalized, 1000.0f, ~IgnoreMe))
+        if (Physics2D.Raycast(firePoint.position, distanceVector.normalized, maxDistance, ~IgnoreMe))
         {
             RaycastHit2D _hit = Physics2D.Raycast(firePoint.position, distanceVector.normalized);
             if (_hit.transform.gameObject.layer == grappableLayerNumber || grappleToAll)
@@ -128,9 +133,17 @@ public class Tutorial_GrapplingGun : MonoBehaviour
                     grapplePoint = _hit.point;
                     grappleDistanceVector = grapplePoint - (Vector2)gunPivot.position;
                     grappleRope.enabled = true;
+                    hitObject = true;
                 }
             }
         }
+        /*else
+        {
+            grapplePoint = (Vector2)firePoint.position + distanceVector.normalized * maxDistance;
+            grappleDistanceVector = grapplePoint - (Vector2)gunPivot.position;
+            grappleRope.enabled = true;
+            hitObject = false;
+        }*/
     }
 
     public void Grapple()
