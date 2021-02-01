@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3170927807849319318}
   - component: {fileID: 5092401613569648392}
   - component: {fileID: 3170927807849319316}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Drive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
