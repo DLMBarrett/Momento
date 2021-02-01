@@ -4823,6 +4823,11 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 4759198195502073682, guid: ed0aa080e0020e94e9cbfc600dd9f217,
         type: 3}
+      propertyPath: launchToPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759198195502073682, guid: ed0aa080e0020e94e9cbfc600dd9f217,
+        type: 3}
       propertyPath: otherGrapplingGun
       value: 
       objectReference: {fileID: 1592808427}
@@ -4846,6 +4851,11 @@ PrefabInstance:
       propertyPath: m_camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 7120145142843026853, guid: ed0aa080e0020e94e9cbfc600dd9f217,
+        type: 3}
+      propertyPath: launchToPoint
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7120145142843026853, guid: ed0aa080e0020e94e9cbfc600dd9f217,
         type: 3}
       propertyPath: otherGrapplingGun

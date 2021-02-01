@@ -89,14 +89,22 @@ public class Tutorial_GrapplingGun : MonoBehaviour
                 }
             }
         }
-        else if (Input.GetKeyUp(mouseButton))
+        else if (Input.GetKeyUp(mouseButton) || Input.GetKeyDown(KeyCode.Space))
         {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Vector2 retractForce = new Vector2(0, 100.0f);
+                Debug.Log("launching " + retractForce.magnitude);
+                gunHolder.GetComponent<Rigidbody2D>().AddForce(retractForce);
+            }
+            
             grappleRope.enabled = false;
             if (!otherGrapplingGun.grappleRope.enabled)
             {
                 m_springJoint2D.enabled = false;
                 m_rigidbody.gravityScale = 1;
             }
+
         }
         else
         {
