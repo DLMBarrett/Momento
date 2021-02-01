@@ -6,14 +6,11 @@ using UnityEngine;
 public class MemoryStorage : MonoBehaviour
 {
     private List<MemoryDrive> memoryDrives;
-
-    private AudioSource audioSource;
     
     // Start is called before the first frame update
     void Start()
     {
         memoryDrives = new List<MemoryDrive>();
-        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -37,6 +34,5 @@ public class MemoryStorage : MonoBehaviour
         MemoryDrive drive = driveObject.GetComponent<MemoryDrive>();
         memoryDrives.Add(drive);
         Debug.Log("added drive with key " + drive.keyNumber);
-        audioSource.Play();
     }
 }
